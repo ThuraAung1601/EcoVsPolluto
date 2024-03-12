@@ -7,15 +7,15 @@ GameManager::GameManager(sf::RenderWindow& window, sf::Texture& backgroundTextur
     this->soundManager = &soundManager;
 
     // Load player texture
-    playerTexture.loadFromFile("Textures/player.png");
+    playerTexture.loadFromFile("Textures/transparent_player.png");
     playerTexture.setSmooth(true);
 
     // Load background texture
-    backgroundTexture.loadFromFile("Textures/Background.png");
+    backgroundTexture.loadFromFile("Textures/transparent_background.png");
     backgroundTexture.setRepeated(true);
 
     // Set window title
-    window.setTitle("2DGame Level: " + std::to_string(currentLevel));
+    window.setTitle("EcoVsPolluto Level: " + std::to_string(currentLevel));
 
     // Load high scores
     levelManager.LoadHighScores();
@@ -360,6 +360,10 @@ void GameManager::CheckButton(int currentButtonId, sf::RenderWindow& window, Lev
     case 11: // Open URL to tutorial page
         cout << "Opening tutorial page..." << endl;
         system("open https://www.youtube.com/playlist?list=PL21OsoBLPpMOO6zyVlxZ4S4hwkY_SLRW9");
+        break;
+    // Open URL to donation
+    case 12:
+        system("open https://drive.google.com/file/d/112CkvagKdObiFYukgti4d3guUV4PLoRY/view?usp=sharing");
         break;
     case 13: // Control page
         guiManager.SetPanel(guiManager.Controls, sf::Vector2f(window.getSize().x / originalSize.x, window.getSize().y / originalSize.y), GetWindowSize(window));

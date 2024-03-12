@@ -12,8 +12,8 @@ Player::Player(sf::Texture& texture, float switchTime, float speed, float jumpHe
     body.setPosition(220.0f, 220.0f);
     body.setTexture(&texture);
     texture.setSmooth(true);
-    particleTexture.loadFromFile("Textures/druppel.png");
-    particleTrailTexture.loadFromFile("Textures/trail.png");
+    particleTexture.loadFromFile("Textures/leaf.png");
+    particleTrailTexture.loadFromFile("Textures/resized_trail.png");
     jumpBuffer.loadFromFile("Audio/jump.wav");
     jumpSound.setBuffer(jumpBuffer);
     soundManager.sounds.push_back(&jumpSound);
@@ -30,7 +30,9 @@ Player::Player(sf::Texture& texture, float switchTime, float speed, float jumpHe
     
     // Initialize health bar
     healthBar.setSize(sf::Vector2f(100.0f, 10.0f));
-    healthBar.setFillColor(sf::Color::Red);
+    // healthBar.setFillColor(sf::Color::White);
+    // Link: https://redketchup.io/color-picker
+    healthBar.setFillColor(sf::Color(152, 251, 152));
     UpdateHealthBarPosition(); // Set initial position
 }
 

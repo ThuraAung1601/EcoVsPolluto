@@ -17,10 +17,10 @@ LevelManager::LevelManager() {
 	levelTextures[6].loadFromFile("Textures/GrassLeft.png");
 	levelTextures[7].loadFromFile("Textures/GrassRight.png");
 	levelTextures[8].loadFromFile("Textures/GrassMid.png");
-	levelTextures[9].loadFromFile("Textures/coins.png");
-	levelTextures[10].loadFromFile("Textures/chest.png");
+	levelTextures[9].loadFromFile("Textures/transparent_coins.png");
+	levelTextures[10].loadFromFile("Textures/tree.png");
 	levelTextures[11].loadFromFile("Textures/Saw.png");
-	levelTextures[12].loadFromFile("Textures/Mace.png");
+	levelTextures[12].loadFromFile("Textures/Spike_down.png");
 	levelTextures[13].loadFromFile("Textures/GrassLeftHalf.png");
 	levelTextures[14].loadFromFile("Textures/GrassRightHalf.png");
 	levelTextures[15].loadFromFile("Textures/GrassMidHalf.png");

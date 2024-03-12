@@ -1,6 +1,5 @@
 // Collider.h
 #pragma once
-
 #include <SFML/Graphics.hpp>
 
 // Collider class for handling collision detection and response.

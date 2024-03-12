@@ -4,7 +4,7 @@
 // GUIManager constructor
 GUIManager::GUIManager(sf::RenderWindow& window, sf::Vector2f windowSize) {
 	buttonTexture.loadFromFile("Textures/buttonActive.png");
-	coinTexture.loadFromFile("Textures/coin.png");
+	coinTexture.loadFromFile("Textures/transparent_coin.png");
 	buttonActiveTexture.loadFromFile("Textures/button.png");
 	buttonSmallTexture.loadFromFile("Textures/buttonActiveSmall.png");
 	buttonSmallActiveTexture.loadFromFile("Textures/buttonSmall.png");
@@ -27,7 +27,7 @@ void GUIManager::SetPanel(PanelType currentPanelType, sf::Vector2f scaleFactor, 
 		this->currentPanel->buttons.push_back(new Button(7, &buttonTexture, &buttonActiveTexture, sf::Vector2f(256.0f*scaleFactor.x, 250.0f*scaleFactor.y), font, 20.0f, true, "Levels"));
 		this->currentPanel->buttons.push_back(new Button(13, &buttonTexture, &buttonActiveTexture, sf::Vector2f(256.0f*scaleFactor.x, 350.0f*scaleFactor.y), font, 20.0f, true, "Controls"));
 		this->currentPanel->buttons.push_back(new Button(2, &buttonTexture, &buttonActiveTexture, sf::Vector2f(256.0f*scaleFactor.x, 450.0f*scaleFactor.y), font, 20.0f, true, "Exit"));
-		this->currentPanel->buttons.push_back(new Button(9, &buttonSmallTexture, &buttonSmallActiveTexture, sf::Vector2f(52.0f*scaleFactor.x, 480.0f*scaleFactor.y), font, 12.0f, true, "Credits"));
+		this->currentPanel->buttons.push_back(new Button(9, &buttonSmallTexture, &buttonSmallActiveTexture, sf::Vector2f(52.0f*scaleFactor.x, 480.0f*scaleFactor.y), font, 12.0f, true, "About"));
 		this->currentPanel->buttons.push_back(new Button(14, &buttonSmallTexture, &buttonSmallActiveTexture, sf::Vector2f(460.0f*scaleFactor.x, 480.0f*scaleFactor.y), font, 12.0f, true, "Toggle Fullscreen"));
 		this->currentPanel->buttons.push_back(new Button(15, &buttonSmallTexture, &buttonSmallActiveTexture, sf::Vector2f(460.0f*scaleFactor.x, 430.0f*scaleFactor.y), font, 12.0f, true, "Sounds Off!"));
 		break;
@@ -117,7 +117,8 @@ void GUIManager::SetPanel(PanelType currentPanelType, sf::Vector2f scaleFactor, 
 		this->currentPanel->texts[2]->SetOrigin();
 		this->currentPanel->texts[3]->SetOrigin();
 		this->currentPanel->texts[4]->SetOrigin();
-		this->currentPanel->buttons.push_back(new Button(11, &buttonTexture, &buttonActiveTexture, sf::Vector2f(100.0f*scaleFactor.x, 228.0f*scaleFactor.y), font, 20.0f, true, "Link to Tuotrial"));
+		this->currentPanel->buttons.push_back(new Button(11, &buttonTexture, &buttonActiveTexture, sf::Vector2f(100.0f*scaleFactor.x, 228.0f*scaleFactor.y), font, 20.0f, true, "Link to Tutorial"));
+		this->currentPanel->buttons.push_back(new Button(12, &buttonTexture, &buttonActiveTexture, sf::Vector2f(100.0f*scaleFactor.x, 128.0f*scaleFactor.y), font, 20.0f, true, "Click to Donate"));
 		this->currentPanel->buttons.push_back(new Button(10, &buttonTexture, &buttonActiveTexture, sf::Vector2f(100.0f*scaleFactor.x, 300.0f*scaleFactor.y), font, 20.0f, true, "Link to Github"));
 		this->currentPanel->buttons.push_back(new Button(5, &buttonTexture, &buttonActiveTexture, sf::Vector2f(100.0f*scaleFactor.x, 450.0f*scaleFactor.y), font, 20.0f, true, "Menu"));
 		break;
