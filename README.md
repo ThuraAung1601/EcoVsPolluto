@@ -83,7 +83,7 @@ struct TileId {
 
 ## Media 
 ### Graphic 
-Bayat: https://bayat.itch.io/platform-game-assets/download/eyJleHBpcmVzIjoxNTQxNjc3MjI3LCJpZCI6MTI4MTM0fQ%3d%3d.zc6BxivH8PABSjne9RTaOktPGKc%3d 
+Bayat: https://bayat.itch.io/platform-game-assets
 
 ### Sound track
 Zapsplat: https://www.zapsplat.com
