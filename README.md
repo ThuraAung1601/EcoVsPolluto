@@ -1,5 +1,7 @@
 # EcoVsPolluto
 
+Github Link: https://github.com/ThuraAung1601/EcoVsPolluto
+
 EcoVsPolluto is a platform-based 2-dimensional game. The gaming logic and physics are based on Super Mario.
 The graphics were renovated by our team. We included the map editing feature. The game is separated into four levels.
 
