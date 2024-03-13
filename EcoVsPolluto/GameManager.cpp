@@ -2,6 +2,7 @@
 #include <cstdlib>
 
 // GameManager constructor
+// & referencing to directly manipulate the object
 GameManager::GameManager(sf::RenderWindow& window, sf::Texture& backgroundTexture, LevelManager& levelManager, GUIManager& guiManager, sf::Sprite& background, int currentLevel, sf::Vector2f& originalSize, SoundManager& soundManager) {
     // Assign sound manager
     this->soundManager = &soundManager;
