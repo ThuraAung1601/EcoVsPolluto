@@ -5,8 +5,8 @@ The graphics were renovated by our team. We included the map editing feature. Th
 
 ## Team
 1. Thura Aung <66011606@kmitl.ac.th>
-2. Eaint Kay Khaing Kyaw
-3. Yanin Saema
+2. Eaint Kay Khaing Kyaw <66011533@kmitl.ac.th>
+3. Yanin Saema <66011301@kmitl.ac.th>
 
 ## Code Overview Analysis 
 ### Classes
@@ -79,9 +79,13 @@ struct TileId {
 };
 ```
 
-## Graphic 
+## Media 
+### Graphic 
+Bayat: https://bayat.itch.io/platform-game-assets/download/eyJleHBpcmVzIjoxNTQxNjc3MjI3LCJpZCI6MTI4MTM0fQ%3d%3d.zc6BxivH8PABSjne9RTaOktPGKc%3d -- art
+https://www.youtube.com/playlist?list=PL21OsoBLPpMOO6zyVlxZ4S4hwkY_SLRW9
 
-## Sound track
+### Sound track
+Zapsplat: https://www.zapsplat.com
 
 ## References
 1. Suraj Sharma, C++ SFML Simple Apps and Games, Youtube, Link: https://youtube.com/playlist?list=PL6xSOsbVA1eb_QqMTTcql_3PdOiE928up&si=ZOFt8-5293jz-gCa
