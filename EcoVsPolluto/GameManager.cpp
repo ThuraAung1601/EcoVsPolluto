@@ -2,7 +2,6 @@
 #include <cstdlib>
 
 // GameManager constructor
-// & referencing to directly manipulate the object
 GameManager::GameManager(sf::RenderWindow& window, sf::Texture& backgroundTexture, LevelManager& levelManager, GUIManager& guiManager, sf::Sprite& background, int currentLevel, sf::Vector2f& originalSize, SoundManager& soundManager) {
     // Assign sound manager
     this->soundManager = &soundManager;
@@ -138,13 +137,13 @@ void GameManager::CheckInput(sf::Event& event, sf::RenderWindow& window, LevelMa
                         guiManager.SetPanel(guiManager.GameOverlay, sf::Vector2f(window.getSize().x / originalSize.x, window.getSize().y / originalSize.y), GetWindowSize(window));
                     }
                     // Handle arrow keys or W/S keys to navigate menu
-                    if (event.key.code == sf::Keyboard::Down || event.key.code == sf::Keyboard::S) {
+                    if (event.key.code == sf::Keyboard::Down) {
                         int t = guiManager.currentPanel->buttons.size() - 1;
                         if (t > guiManager.currentButton) {
                             guiManager.currentButton++;
                         }
                     }
-                    if (event.key.code == sf::Keyboard::Up || event.key.code == sf::Keyboard::W) {
+                    if (event.key.code == sf::Keyboard::Up) {
                         if (guiManager.currentButton > 0) {
                             guiManager.currentButton--;
                         }
@@ -196,7 +195,7 @@ void GameManager::UpdateGame(sf::RenderWindow& window, GUIManager& guiManager, L
         if (guiManager.CheckIfCurrentWindow(guiManager.GameOverlay)) {
             guiManager.UpdateText(0, "Time: " + stream.str());
             guiManager.UpdateText(1, "HighScore: " + streamHighscore.str());
-            guiManager.UpdateText(2, "Coins: " + streamCoins.str());
+            guiManager.UpdateText(2, "Plants: " + streamCoins.str());
         }
 
         // Handle player collision with tiles

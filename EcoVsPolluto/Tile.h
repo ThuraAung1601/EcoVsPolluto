@@ -51,7 +51,7 @@ class Coin : public Tile {
 		}
 	private:
 		Animation animation;
-	};
+};
 
 
 class Enemy : public Tile {

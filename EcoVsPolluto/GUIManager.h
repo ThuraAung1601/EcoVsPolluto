@@ -17,17 +17,7 @@ public:
 	~GUIManager();
 
 	// Enum representing different types of panels
-	enum PanelType { 
-	   Menu, 
-	   Levels, 
-	   GameOver, 
-	   GameOverlay, 
-	   LevelFinished, 
-	   Editor, 
-	   Pause, 
-	   Credits, 
-	   Controls 
-	 };
+	enum PanelType { Menu, Levels, GameOver, GameOverlay, LevelFinished, Editor, Pause, Credits, Controls };
 
 	// The current active panel type
 	PanelType panel = Menu;

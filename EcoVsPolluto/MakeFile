@@ -1,3 +1,4 @@
+# Thura Aung
 # Replace this with the path you get from `brew info sfml`
 SFML_PATH = /opt/homebrew/Cellar/sfml/2.6.1
 

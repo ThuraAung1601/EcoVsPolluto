@@ -20,7 +20,6 @@ void GUIManager::SetPanel(PanelType currentPanelType, sf::Vector2f scaleFactor, 
 	// Menu State
 	case Menu:
 		inMenu = true;
-		// explictly refered for clarity
 		this->currentPanel = new Panel(windowSize, sf::Color::Transparent, sf::Vector2f(0.0f, 0.0f));
 		this->currentPanel->texts.push_back(new Text(30, sf::Color::Black, font, "Menu", sf::Vector2f(256.0f*scaleFactor.x, 50.0f*scaleFactor.y)));
 		this->currentPanel->texts[0]->SetOrigin();
@@ -110,7 +109,7 @@ void GUIManager::SetPanel(PanelType currentPanelType, sf::Vector2f scaleFactor, 
 		this->currentPanel = new Panel(windowSize, sf::Color::Transparent, sf::Vector2f(0.0f, 0.0f));
 		this->currentPanel->texts.push_back(new Text(30, sf::Color::Black, font, "About", sf::Vector2f(256.0f*scaleFactor.x, 50.0f*scaleFactor.y)));
 		this->currentPanel->texts[0]->SetOrigin();
-		this->currentPanel->texts.push_back(new Text(20, sf::Color::Black, font, "Game made by: Thura, Eaint Yanin", sf::Vector2f(312.0f*scaleFactor.x, 170.0f*scaleFactor.y)));
+		this->currentPanel->texts.push_back(new Text(20, sf::Color::Black, font, "Thura, Eaint, Yanin", sf::Vector2f(312.0f*scaleFactor.x, 170.0f*scaleFactor.y)));
 		this->currentPanel->texts.push_back(new Text(20, sf::Color::Black, font, "Used the art from: Bayat", sf::Vector2f(312.0f*scaleFactor.x, 220.0f*scaleFactor.y)));
 		this->currentPanel->texts.push_back(new Text(20, sf::Color::Black, font, "Used a tutorial to begin \nwith from: Hilze Vonck", sf::Vector2f(312.0f*scaleFactor.x, 270.0f*scaleFactor.y)));
 		this->currentPanel->texts.push_back(new Text(20, sf::Color::Black, font, "Sounds are from Zapsplat", sf::Vector2f(312.0f*scaleFactor.x, 320.0f*scaleFactor.y)));
