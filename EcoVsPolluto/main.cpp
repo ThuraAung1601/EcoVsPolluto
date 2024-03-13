@@ -15,7 +15,6 @@ int main()
 {
 	const sf::Vector2u designedsize(512, 512);
 	int currentLevel = 0;
-	// sf::RenderWindow window(sf::VideoMode::getDesktopMode(), "Ice Hero    by:Rick Rijkers", sf::Style::Fullscreen);
 	const sf::Vector2u windowSize(1024, 768); // Set a standard window size
 
     sf::RenderWindow window(sf::VideoMode(windowSize.x, windowSize.y), "EcoVsPolluto", sf::Style::Default);
