@@ -74,8 +74,8 @@ struct is a user-defined data type that allows grouping multiple variables of di
 ```
 // LevelManager.h
 struct TileId {
-		int tileId;
-		sf::Vector2f position;
+	int tileId;
+	sf::Vector2f position;
 };
 ```
 
