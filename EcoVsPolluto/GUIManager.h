@@ -28,6 +28,7 @@ public:
 	   Credits, 
 	   Controls 
 	 };
+
 	// The current active panel type
 	PanelType panel = Menu;
 
