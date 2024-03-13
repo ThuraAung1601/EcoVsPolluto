@@ -54,7 +54,7 @@ class Coin : public Tile {
 	};
 
 
-	class Enemy : public Tile {
+class Enemy : public Tile {
 	public:
 		Enemy(sf::Texture& texture, sf::Vector2f size, sf::Vector2f position, int tileId, sf::Vector2f origin);
 		float upSpeed = 175.0f;
