@@ -65,7 +65,7 @@ enum is a user-defined type. We used to assign Panel Objects.
 	   Pause, 
 	   Credits, 
 	   Controls 
-	 };
+};
 ```
 
 ### struct
