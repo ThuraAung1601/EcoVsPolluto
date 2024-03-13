@@ -81,8 +81,7 @@ struct TileId {
 
 ## Media 
 ### Graphic 
-Bayat: https://bayat.itch.io/platform-game-assets/download/eyJleHBpcmVzIjoxNTQxNjc3MjI3LCJpZCI6MTI4MTM0fQ%3d%3d.zc6BxivH8PABSjne9RTaOktPGKc%3d -- art
-https://www.youtube.com/playlist?list=PL21OsoBLPpMOO6zyVlxZ4S4hwkY_SLRW9
+Bayat: https://bayat.itch.io/platform-game-assets/download/eyJleHBpcmVzIjoxNTQxNjc3MjI3LCJpZCI6MTI4MTM0fQ%3d%3d.zc6BxivH8PABSjne9RTaOktPGKc%3d 
 
 ### Sound track
 Zapsplat: https://www.zapsplat.com
