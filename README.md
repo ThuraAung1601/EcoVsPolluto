@@ -28,7 +28,47 @@ The graphics were renovated by our team. We included the map editing feature. Th
 Tile class is an abstract class with derived classes - Coin and Enemy.
 
 ### Pointer
+this-> pointer is used to explicitly refer to the current object instance within a member function of that object. It is used for clarity to avoid confusion and ensures to access the intended member variable of the object.
+```
+// GUIManager.h
+// used for clarity
+		this->currentPanel = new Panel(windowSize, sf::Color::Transparent, sf::Vector2f(0.0f, 0.0f));
+```
 
+
+```
+std::unique_ptr<Coin>(new Coin(levelTextures[tileId], sf::Vector2f(35.0f, 50.0f), pos, tileId, sf::Vector2f(17.5f, 25.0f)))
+```
+
+### Pass by Reference
+& symbol is used in function parameters to denote that the arguments being passed are references rather than values.
+
+```
+// GameManager.cpp
+GameManager::GameManager(sf::RenderWindow& window, sf::Texture& backgroundTexture, LevelManager& levelManager, GUIManager& guiManager, sf::Sprite& background, int currentLevel, sf::Vector2f& originalSize, SoundManager& soundManager) {
+    // Assign sound manager
+    this->soundManager = &soundManager;
+```
+
+### enum
+enum is a user-defined type. We used to assign Panel Objects.
+```
+// GUIManager.h
+// Enum representing different types of panels
+	enum PanelType { 
+	   Menu, 
+	   Levels, 
+	   GameOver, 
+	   GameOverlay, 
+	   LevelFinished, 
+	   Editor, 
+	   Pause, 
+	   Credits, 
+	   Controls 
+	 };
+```
+
+### struct
 
 
 ## References
