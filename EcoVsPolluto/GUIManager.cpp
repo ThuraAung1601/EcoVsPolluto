@@ -20,6 +20,7 @@ void GUIManager::SetPanel(PanelType currentPanelType, sf::Vector2f scaleFactor, 
 	// Menu State
 	case Menu:
 		inMenu = true;
+		// explictly refered for clarity
 		this->currentPanel = new Panel(windowSize, sf::Color::Transparent, sf::Vector2f(0.0f, 0.0f));
 		this->currentPanel->texts.push_back(new Text(30, sf::Color::Black, font, "Menu", sf::Vector2f(256.0f*scaleFactor.x, 50.0f*scaleFactor.y)));
 		this->currentPanel->texts[0]->SetOrigin();
