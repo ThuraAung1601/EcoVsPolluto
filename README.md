@@ -8,7 +8,7 @@ The graphics were renovated by our team. We included the map editing feature. Th
 2. Eaint Kay Khaing Kyaw
 3. Yanin Saema
 
-## Code analysis 
+## Code Overview Analysis 
 ### Classes
 1. Animation: for handling sprite animations.
 2. Button: for creating interactive buttons in a graphical user interface.
@@ -35,7 +35,7 @@ this-> pointer is used to explicitly refer to the current object instance within
 		this->currentPanel = new Panel(windowSize, sf::Color::Transparent, sf::Vector2f(0.0f, 0.0f));
 ```
 
-
+unique_ptr is used for direct manipulation of Tile objects (Coin and Enemy).
 ```
 std::unique_ptr<Coin>(new Coin(levelTextures[tileId], sf::Vector2f(35.0f, 50.0f), pos, tileId, sf::Vector2f(17.5f, 25.0f)))
 ```
@@ -69,7 +69,19 @@ enum is a user-defined type. We used to assign Panel Objects.
 ```
 
 ### struct
+struct is a user-defined data type that allows grouping multiple variables of different types under a single name together. For example, we used struct to save Tile informations - id and position.
 
+```
+// LevelManager.h
+struct TileId {
+		int tileId;
+		sf::Vector2f position;
+};
+```
+
+## Graphic 
+
+## Sound track
 
 ## References
 1. Suraj Sharma, C++ SFML Simple Apps and Games, Youtube, Link: https://youtube.com/playlist?list=PL6xSOsbVA1eb_QqMTTcql_3PdOiE928up&si=ZOFt8-5293jz-gCa
