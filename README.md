@@ -1,5 +1,7 @@
 # EcoVsPolluto
 
+[![C/C++ CI](https://github.com/ThuraAung1601/EcoVsPolluto/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/ThuraAung1601/EcoVsPolluto/actions/workflows/c-cpp.yml)
+
 Github Link: https://github.com/ThuraAung1601/EcoVsPolluto
 
 EcoVsPolluto is a platform-based 2-dimensional game. The gaming logic and physics are based on Super Mario.
