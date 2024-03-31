@@ -5,7 +5,7 @@ project(EcoVsPolluto)
 set(CMAKE_CXX_STANDARD 11)
 
 # Add main.cpp as the only source file
-add_executable(app main.cpp)
+add_executable(app ./EcoVsPolluto/main.cpp)
 
 # Include SFML
 find_package(SFML 2.5.1 COMPONENTS graphics window system audio network REQUIRED)
