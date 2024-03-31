@@ -4,33 +4,18 @@ project(EcoVsPolluto)
 # Set C++ standard
 set(CMAKE_CXX_STANDARD 11)
 
-# List all source files except CMakeCXXCompilerId.cpp
-set(SOURCES
-    main.cpp
-    Animation.cpp
-    Button.cpp
-    GUIManager.cpp
-    GameManager.cpp
-    Particle.cpp
-    ParticleSystem.cpp
-    Player.cpp
-    SoundManager.cpp
-    LevelManager.cpp
-    Tile.cpp
-    Panel.cpp
-    Text.cpp
-    Collider.cpp
-)
+# List all source files
+file(GLOB_RECURSE SOURCES "*.cpp")
+
+# Remove CMake-generated files from the list of sources
+file(GLOB_RECURSE REMOVE_CMAKE "cmake-build-debug/*")
+list(REMOVE_ITEM SOURCES ${REMOVE_CMAKE})
 
 # Include SFML
 find_package(SFML 2.5.1 COMPONENTS graphics window system audio network REQUIRED)
 
 # Create executable
 add_executable(app ${SOURCES})
-
-CMake Error at CMakeLists.txt:29 (add_executable):
-  Cannot find source file:
-    main.cpp
 
 # Link SFML libraries
 target_link_libraries(app sfml-graphics sfml-window sfml-system sfml-audio sfml-network)
