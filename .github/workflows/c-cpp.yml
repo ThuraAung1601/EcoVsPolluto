@@ -24,11 +24,17 @@ jobs:
       run: |
         sudo apt-get install libpthread-stubs0-dev libgl1-mesa-dev libx11-dev libxrandr-dev libfreetype6-dev libglew-dev libjpeg8-dev libsndfile1-dev libopenal-dev
 
-    - name: Install SFML 2.6
+    # - name: Install SFML 2.6
+    #   run: |
+    #     wget https://www.sfml-dev.org/files/SFML-2.6.2-linux-gcc-64-bit.tar.gz
+    #     tar -xzf SFML-2.6.2-linux-gcc-64-bit.tar.gz
+    #     sudo mv SFML-2.6.2 /usr/local/
+
+    - name: Install SFML 2.5.1
       run: |
-        wget https://www.sfml-dev.org/files/SFML-2.6.2-linux-gcc-64-bit.tar.gz
-        tar -xzf SFML-2.6.2-linux-gcc-64-bit.tar.gz
-        sudo mv SFML-2.6.2 /usr/local/
+        wget https://www.sfml-dev.org/files/SFML-2.5.1-linux-gcc-64-bit.tar.gz
+        tar -xzf SFML-2.5.1-linux-gcc-64-bit.tar.gz
+        sudo mv SFML-2.5.1 /usr/local/
 
     - name: Build
       run: |
