@@ -4,7 +4,7 @@ project(EcoVsPolluto)
 # Set C++ standard
 set(CMAKE_CXX_STANDARD 11)
 
-# List all source files
+# List all source files except CMakeCXXCompilerId.cpp
 set(SOURCES
     main.cpp
     Animation.cpp
