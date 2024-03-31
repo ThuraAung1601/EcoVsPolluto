@@ -28,5 +28,9 @@ find_package(SFML 2.5.1 COMPONENTS graphics window system audio network REQUIRED
 # Create executable
 add_executable(app ${SOURCES})
 
+CMake Error at CMakeLists.txt:29 (add_executable):
+  Cannot find source file:
+    main.cpp
+
 # Link SFML libraries
 target_link_libraries(app sfml-graphics sfml-window sfml-system sfml-audio sfml-network)
