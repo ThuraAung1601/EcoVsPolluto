@@ -4,8 +4,23 @@ project(EcoVsPolluto)
 # Set C++ standard
 set(CMAKE_CXX_STANDARD 11)
 
-# Add main.cpp as the only source file
-add_executable(app ./EcoVsPolluto/main.cpp)
+# Add all source files to the executable
+add_executable(app 
+    ./EcoVsPolluto/main.cpp
+    ./EcoVsPolluto/Animation.cpp
+    ./EcoVsPolluto/Button.cpp
+    ./EcoVsPolluto/GUIManager.cpp
+    ./EcoVsPolluto/GameManager.cpp
+    ./EcoVsPolluto/Particle.cpp
+    ./EcoVsPolluto/ParticleSystem.cpp
+    ./EcoVsPolluto/Player.cpp
+    ./EcoVsPolluto/SoundManager.cpp
+    ./EcoVsPolluto/LevelManager.cpp
+    ./EcoVsPolluto/Tile.cpp
+    ./EcoVsPolluto/Panel.cpp
+    ./EcoVsPolluto/Text.cpp
+    ./EcoVsPolluto/Collider.cpp
+)
 
 # Include SFML
 find_package(SFML 2.5.1 COMPONENTS graphics window system audio network REQUIRED)
