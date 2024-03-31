@@ -4,8 +4,23 @@ project(EcoVsPolluto)
 # Set C++ standard
 set(CMAKE_CXX_STANDARD 11)
 
-# Find all source files
-file(GLOB_RECURSE SOURCES "*.cpp")
+# List all source files
+set(SOURCES
+    main.cpp
+    Animation.cpp
+    Button.cpp
+    GUIManager.cpp
+    GameManager.cpp
+    Particle.cpp
+    ParticleSystem.cpp
+    Player.cpp
+    SoundManager.cpp
+    LevelManager.cpp
+    Tile.cpp
+    Panel.cpp
+    Text.cpp
+    Collider.cpp
+)
 
 # Include SFML
 find_package(SFML 2.5.1 COMPONENTS graphics window system audio network REQUIRED)
