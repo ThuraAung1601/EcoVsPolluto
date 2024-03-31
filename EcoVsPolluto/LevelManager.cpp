@@ -2,6 +2,7 @@
 #include <fstream>
 #include <iostream>
 #include <string>
+#include <cmath>
 using namespace std;
 
 // Constructor initializes textures and fonts.
