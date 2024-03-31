@@ -1,5 +1,6 @@
 #include "Player.h"
 #include <iostream>
+#include <cmath>
 
 Player::Player(sf::Texture& texture, float switchTime, float speed, float jumpHeight, SoundManager& soundManager) : animation(texture, 0, 17, 32, switchTime) {
     this->speed = speed;
