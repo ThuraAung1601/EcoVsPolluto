@@ -11,26 +11,27 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest, macos-latest]
+
+    runs-on: ${{ matrix.os }}
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Update package lists
+    - name: Update package lists (Ubuntu and macOS only)
+      if: matrix.os != 'windows-latest'
       run: sudo apt-get update
 
-    - name: Install dependencies
+    - name: Install dependencies (Ubuntu and macOS only)
+      if: matrix.os != 'windows-latest'
       run: |
         sudo apt-get install libpthread-stubs0-dev libgl1-mesa-dev libx11-dev libxrandr-dev libfreetype6-dev libglew-dev libjpeg8-dev libsndfile1-dev libopenal-dev
 
-    # - name: Install SFML 2.6
-    #   run: |
-    #     wget https://www.sfml-dev.org/files/SFML-2.6.2-linux-gcc-64-bit.tar.gz
-    #     tar -xzf SFML-2.6.2-linux-gcc-64-bit.tar.gz
-    #     sudo mv SFML-2.6.2 /usr/local/
-
-    - name: Install SFML 2.5.1
+    - name: Install SFML 2.5.1 (Ubuntu and macOS only)
+      if: matrix.os != 'windows-latest'
       run: |
         wget https://www.sfml-dev.org/files/SFML-2.5.1-linux-gcc-64-bit.tar.gz
         tar -xzf SFML-2.5.1-linux-gcc-64-bit.tar.gz
