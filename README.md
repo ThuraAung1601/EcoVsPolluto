@@ -13,9 +13,9 @@ The graphics were renovated by our team. We included the map editing feature. Th
 3. Yanin Saema <66011301@kmitl.ac.th>
 
 ## Contribution
-1. Thura Aung - Overseeing the project, Code refactoring, Game logic, Sprite and GUI management.
+1. Thura Aung (Main Contributor) - Overseeing the project, Code refactoring, Game logic, Sprite, Level, and GUI management.
 2. Eaint Kay Khaing Kyaw - Level and GUI management.
-3. Yanin Saema - Sprite design renovation, GUI Design and About Page.
+3. Yanin Saema - Sprite design renovation, GUI Design, and About Page.
 
 ## Code Overview Analysis 
 ### Classes
